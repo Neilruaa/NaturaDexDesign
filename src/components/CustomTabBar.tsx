@@ -53,7 +53,7 @@ export function CustomTabBar({ state, navigation }: BottomTabBarProps) {
               >
                 <Icon
                   size={24}
-                  color={isFocused ? "#059669" : "rgba(6, 78, 59, 0.4)"}
+                  color={isFocused ? "#97572B" : "rgba(151,87,43, 0.4)"}
                   strokeWidth={isFocused ? 2.5 : 2}
                 />
               </Pressable>
@@ -86,7 +86,7 @@ export const styles = StyleSheet.create({
     borderTopColor: "rgba(255, 255, 255, 0.9)",
     borderBottomColor: "rgba(255, 255, 255, 0.3)",
     // Drop shadow
-    shadowColor: "#059669",
+    shadowColor: "#97572B",
     shadowOffset: { width: 0, height: 12 },
     shadowOpacity: 0.15,
     shadowRadius: 24,
@@ -103,7 +103,7 @@ export const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "rgba(255, 255, 255, 0.3)",
     margin: 1,
-    borderTopColor: "rgba(255, 255, 255, 0.6)",
+    borderTopColor: "rgba(250,235,215,0.8)",
   },
   iconsRow: {
     flex: 1,

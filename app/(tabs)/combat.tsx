@@ -7,7 +7,7 @@ const { width } = Dimensions.get("window");
 
 export default function CombatScreen() {
     return (
-        <View className="flex-1 bg-[#f2f6f3]">
+        <View className="flex-1 bg-solarpunk-page">
             {/* Ambient Glow */}
             <View
                 style={{
@@ -28,7 +28,7 @@ export default function CombatScreen() {
                     width: 384,
                     height: 384,
                     borderRadius: 192,
-                    backgroundColor: "rgba(16,185,129,0.1)",
+                    backgroundColor: "rgba(168,220,171,0.1)",
                 }}
             />
 
@@ -36,9 +36,9 @@ export default function CombatScreen() {
             <View style={{ paddingTop: 72, paddingBottom: 16, alignItems: "center" }}>
                 <View className="flex-row items-center gap-2">
                     <Zap size={24} color="#f59e0b" fill="#f59e0b" />
-                    <Text className="text-2xl font-black text-emerald-950 tracking-tight">ARENA</Text>
+                    <Text className="text-2xl font-black text-solarpunk-leather tracking-tight">ARENA</Text>
                 </View>
-                <Text className="text-sm font-medium text-emerald-800/60 mt-1">
+                <Text className="text-sm font-medium text-solarpunk-leather/60 mt-1">
                     Challenge others or explore the wild
                 </Text>
             </View>
@@ -86,7 +86,7 @@ export default function CombatScreen() {
                                     width: 96,
                                     height: 96,
                                     borderRadius: 48,
-                                    backgroundColor: "rgba(255,255,255,0.6)",
+                                    backgroundColor: "rgba(250,235,215,0.8)",
                                     borderWidth: 1,
                                     borderColor: "rgba(255,255,255,0.8)",
                                     alignItems: "center",
@@ -107,12 +107,12 @@ export default function CombatScreen() {
                             >
                                 DUEL
                             </Text>
-                            <Text className="text-emerald-950/70 font-semibold mt-2 text-[15px]">
+                            <Text className="text-solarpunk-leather/70 font-semibold mt-2 text-[15px]">
                                 1v1 Online Battle
                             </Text>
                             <Text
                                 style={{
-                                    color: "rgba(6,78,59,0.5)",
+                                    color: "rgba(151,87,43,0.5)",
                                     fontSize: 14,
                                     fontWeight: "500",
                                     marginTop: 4,
@@ -143,7 +143,7 @@ export default function CombatScreen() {
                                 borderColor: "rgba(255,255,255,0.8)",
                                 alignItems: "center",
                                 justifyContent: "center",
-                                shadowColor: "#10b981",
+                                shadowColor: "#A8DCAB",
                                 shadowOffset: { width: 0, height: 8 },
                                 shadowOpacity: 0.15,
                                 shadowRadius: 32,
@@ -151,8 +151,8 @@ export default function CombatScreen() {
                             }}
                         >
                             {/* Decorative corners */}
-                            <View style={{ position: "absolute", bottom: 16, left: 16, width: 16, height: 16, borderBottomWidth: 2, borderLeftWidth: 2, borderColor: "rgba(6,78,59,0.1)", borderBottomLeftRadius: 12 }} />
-                            <View style={{ position: "absolute", bottom: 16, right: 16, width: 16, height: 16, borderBottomWidth: 2, borderRightWidth: 2, borderColor: "rgba(6,78,59,0.1)", borderBottomRightRadius: 12 }} />
+                            <View style={{ position: "absolute", bottom: 16, left: 16, width: 16, height: 16, borderBottomWidth: 2, borderLeftWidth: 2, borderColor: "rgba(151,87,43,0.1)", borderBottomLeftRadius: 12 }} />
+                            <View style={{ position: "absolute", bottom: 16, right: 16, width: 16, height: 16, borderBottomWidth: 2, borderRightWidth: 2, borderColor: "rgba(151,87,43,0.1)", borderBottomRightRadius: 12 }} />
 
                             {/* Icon Circle */}
                             <View
@@ -160,7 +160,7 @@ export default function CombatScreen() {
                                     width: 96,
                                     height: 96,
                                     borderRadius: 48,
-                                    backgroundColor: "rgba(255,255,255,0.6)",
+                                    backgroundColor: "rgba(250,235,215,0.8)",
                                     borderWidth: 1,
                                     borderColor: "rgba(255,255,255,0.8)",
                                     alignItems: "center",
@@ -168,20 +168,20 @@ export default function CombatScreen() {
                                     marginBottom: 16,
                                 }}
                             >
-                                <Map size={40} color="#059669" strokeWidth={2.5} />
+                                <Map size={40} color="#97572B" strokeWidth={2.5} />
                             </View>
 
                             <Text
                                 style={{
                                     fontSize: 28,
                                     fontWeight: "900",
-                                    color: "#059669",
+                                    color: "#97572B",
                                     letterSpacing: 4,
                                 }}
                             >
                                 CARRIÈRE
                             </Text>
-                            <Text className="text-emerald-950/70 font-semibold mt-3 text-sm text-center leading-relaxed px-8">
+                            <Text className="text-solarpunk-leather/70 font-semibold mt-3 text-sm text-center leading-relaxed px-8">
                                 Progress through the world{"\n"}and fight the Erosion
                             </Text>
                         </LinearGradient>

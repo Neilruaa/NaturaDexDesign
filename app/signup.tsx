@@ -15,10 +15,10 @@ export default function SignupScreen() {
     const router = useRouter();
 
     return (
-        <View className="flex-1 bg-[#f2f6f3]">
+        <View className="flex-1 bg-solarpunk-page">
             {/* Background ambient glows */}
-            <View className="absolute top-0 left-0 w-[300px] h-[300px] rounded-full bg-emerald-300/20 -translate-x-1/2 -translate-y-1/2" />
-            <View className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-amber-200/20 translate-x-1/3 translate-y-1/3" />
+            <View className="absolute top-0 left-0 w-[300px] h-[300px] rounded-full bg-solarpunk-leather/10 -translate-x-1/2 -translate-y-1/2" />
+            <View className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-solarpunk-sky/15 translate-x-1/3 translate-y-1/3" />
 
             <ScrollView
                 contentContainerStyle={{
@@ -36,8 +36,8 @@ export default function SignupScreen() {
                 >
                     {/* Logo/Brand */}
                     <View className="items-center mb-8">
-                        <Text className="text-3xl font-bold text-emerald-900 mb-2">Bienvenue</Text>
-                        <Text className="text-emerald-700/70 text-base text-center px-4">
+                        <Text className="text-3xl font-bold text-solarpunk-leather mb-2">Bienvenue</Text>
+                        <Text className="text-solarpunk-leather/70 text-base text-center px-4">
                             Créez votre compte pour commencer
                         </Text>
                     </View>
@@ -84,17 +84,17 @@ export default function SignupScreen() {
 
                         {/* Divider */}
                         <View className="mb-6" style={{ position: "relative", height: 20, justifyContent: "center" }}>
-                            <View style={{ height: 1, backgroundColor: "rgba(6,78,59,0.1)" }} />
+                            <View style={{ height: 1, backgroundColor: "rgba(151,87,43,0.1)" }} />
                             <View
                                 style={{
                                     position: "absolute",
                                     alignSelf: "center",
                                     paddingHorizontal: 16,
-                                    backgroundColor: "rgba(255,255,255,0.6)",
+                                    backgroundColor: "rgba(250,235,215,0.8)",
                                     borderRadius: 9999,
                                 }}
                             >
-                                <Text className="text-[12px] font-medium text-emerald-700/70">ou continuer avec</Text>
+                                <Text className="text-[12px] font-medium text-solarpunk-leather/70">ou continuer avec</Text>
                             </View>
                         </View>
 
@@ -104,7 +104,7 @@ export default function SignupScreen() {
                                 style={{
                                     paddingVertical: 14,
                                     borderRadius: 16,
-                                    backgroundColor: "rgba(255,255,255,0.7)",
+                                    backgroundColor: "rgba(250,235,215,0.9)",
                                     borderWidth: 1,
                                     borderColor: "white",
                                     flexDirection: "row",
@@ -114,14 +114,14 @@ export default function SignupScreen() {
                                 }}
                             >
                                 <Text style={{ fontSize: 18 }}>🇬</Text>
-                                <Text className="text-sm font-semibold text-emerald-900">Connexion avec Google</Text>
+                                <Text className="text-sm font-semibold text-solarpunk-leather">Connexion avec Google</Text>
                             </Pressable>
 
                             <Pressable
                                 style={{
                                     paddingVertical: 14,
                                     borderRadius: 16,
-                                    backgroundColor: "rgba(255,255,255,0.7)",
+                                    backgroundColor: "rgba(250,235,215,0.9)",
                                     borderWidth: 1,
                                     borderColor: "white",
                                     flexDirection: "row",
@@ -131,17 +131,17 @@ export default function SignupScreen() {
                                 }}
                             >
                                 <Text style={{ fontSize: 18 }}>🍎</Text>
-                                <Text className="text-sm font-semibold text-emerald-900">Connexion Apple ID</Text>
+                                <Text className="text-sm font-semibold text-solarpunk-leather">Connexion Apple ID</Text>
                             </Pressable>
                         </View>
                     </GlassCard>
 
                     {/* Sign In Link */}
                     <View className="mt-6 items-center">
-                        <Text className="text-sm text-emerald-700">
+                        <Text className="text-sm text-solarpunk-leather">
                             Vous avez déjà un compte ?{" "}
                             <Text
-                                className="font-semibold text-emerald-600"
+                                className="font-semibold text-solarpunk-leather"
                                 style={{ textDecorationLine: "underline" }}
                                 onPress={() => router.replace("/login")}
                             >

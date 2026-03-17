@@ -22,7 +22,7 @@ export interface GradientButtonProps {
 export function GradientButton({
   label,
   onPress,
-  colors = ["#34d399", "#10b981"],
+  colors = ["#2E6F40", "#A8DCAB"],
   shadowColor = "#6ee7b7",
   style,
 }: GradientButtonProps) {

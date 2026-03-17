@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, StyleSheet, Dimensions } from "react-native";
 import { MotiView } from "moti";
-import { Star, Shield, Droplets } from "lucide-react-native";
+import { Star, Wind, Droplets, Bug, PawPrint, Leaf } from "lucide-react-native";
 import type { Animal } from "../data";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
@@ -17,6 +17,18 @@ export interface AnimalCardProps {
   cardWidth?: number;
 }
 
+const getTypeConfig = (type: string) => {
+  switch (type) {
+    case 'flying': return { Icon: Wind, color: '#ABDDF1' };
+    case 'marine': return { Icon: Droplets, color: '#006994' };
+    case 'insect': return { Icon: Bug, color: '#00CEC8' };
+    case 'flora': return { Icon: Leaf, color: '#2E6F40' };
+    case 'terrestrial': 
+    default:
+       return { Icon: PawPrint, color: '#90AAA1' };
+  }
+};
+
 /**
  * Dex grid card showing animal image, rarity stars, and animated HP bar.
  * Designed for use in a FlatList with numColumns={2}.
@@ -27,6 +39,7 @@ export function AnimalCard({
   cardWidth = DEFAULT_CARD_WIDTH,
 }: AnimalCardProps) {
   const hpPercentage = (animal.hp / animal.maxHp) * 100;
+  const { Icon: TypeIcon, color: typeColor } = getTypeConfig(animal.type);
 
   return (
     <MotiView
@@ -45,11 +58,7 @@ export function AnimalCard({
           />
           {/* Type Badge */}
           <View style={styles.typeBadge}>
-            {animal.rarity >= 4 ? (
-              <Shield size={14} color="#fcd34d" strokeWidth={2.5} />
-            ) : (
-              <Droplets size={14} color="#67e8f9" strokeWidth={2.5} />
-            )}
+            <TypeIcon size={14} color={typeColor} strokeWidth={2.5} />
           </View>
         </View>
       </View>
@@ -66,7 +75,7 @@ export function AnimalCard({
             <Star
               key={i}
               size={12}
-              color={i < animal.rarity ? "#fbbf24" : "rgba(6,78,59,0.1)"}
+              color={i < animal.rarity ? "#fbbf24" : "rgba(151,87,43,0.1)"}
               fill={i < animal.rarity ? "#fbbf24" : "transparent"}
             />
           ))}
@@ -93,7 +102,7 @@ export function AnimalCard({
                 styles.hpFill,
                 {
                   backgroundColor:
-                    hpPercentage > 50 ? "#10b981" : "#f59e0b",
+                    hpPercentage > 50 ? "#A8DCAB" : "#f59e0b",
                 },
               ]}
             />
@@ -108,7 +117,7 @@ const styles = StyleSheet.create({
   card: {
     marginBottom: CARD_GAP,
     borderRadius: 24,
-    backgroundColor: "rgba(255,255,255,0.6)",
+    backgroundColor: "rgba(250,235,215,0.8)",
     borderWidth: 1,
     borderColor: "rgba(255,255,255,1)",
     shadowColor: "#000",
@@ -149,7 +158,7 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 14,
     fontWeight: "bold",
-    color: "#064e3b",
+    color: "#97572B",
   },
   stars: {
     flexDirection: "row",
@@ -165,14 +174,14 @@ const styles = StyleSheet.create({
   hpLabel: {
     fontSize: 10,
     fontWeight: "bold",
-    color: "rgba(6,78,59,0.5)",
+    color: "rgba(151,87,43,0.5)",
     textTransform: "uppercase",
     letterSpacing: 1,
   },
   hpValue: {
     fontSize: 10,
     fontWeight: "600",
-    color: "rgba(6,78,59,0.7)",
+    color: "rgba(151,87,43,0.7)",
   },
   hpTrack: {
     height: 6,

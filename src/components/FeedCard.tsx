@@ -70,7 +70,7 @@ export function FeedCard({ event, index = 0 }: FeedCardProps) {
             </View>
             <View style={styles.actionItem}>
               <View style={styles.commentBtn}>
-                <MessageCircle size={20} color="#10b981" strokeWidth={2.5} />
+                <MessageCircle size={20} color="#A8DCAB" strokeWidth={2.5} />
               </View>
               <Text style={styles.actionCount}>{event.comments}</Text>
             </View>
@@ -103,17 +103,17 @@ const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: 15,
-    color: "rgba(6,78,59,0.8)",
+    color: "rgba(151,87,43,0.8)",
     flex: 1,
     flexShrink: 1,
   },
   headerBold: {
     fontWeight: "bold",
-    color: "#064e3b",
+    color: "#97572B",
   },
   headerAnimal: {
     fontWeight: "bold",
-    color: "#059669",
+    color: "#97572B",
   },
   imageContainer: {
     paddingHorizontal: 16,
@@ -162,11 +162,11 @@ const styles = StyleSheet.create({
     borderRadius: 9999,
     backgroundColor: "#ecfdf5",
     borderWidth: 1,
-    borderColor: "rgba(16,185,129,0.5)",
+    borderColor: "rgba(168,220,171,0.5)",
   },
   actionCount: {
     fontSize: 14,
     fontWeight: "600",
-    color: "rgba(6,78,59,0.6)",
+    color: "rgba(151,87,43,0.6)",
   },
 });

@@ -42,7 +42,7 @@ export function GlassIconButton({
     >
       <Icon
         size={iconSize}
-        color={isDark ? "rgba(255,255,255,0.7)" : "#047857"}
+        color={isDark ? "rgba(250,235,215,0.9)" : "#047857"}
         strokeWidth={2.5}
       />
     </Pressable>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     borderColor: "rgba(255,255,255,0.2)",
   },
   light: {
-    backgroundColor: "rgba(255,255,255,0.7)",
+    backgroundColor: "rgba(250,235,215,0.9)",
     borderColor: "white",
     borderRadius: 9999,
   },

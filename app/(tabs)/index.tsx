@@ -5,10 +5,10 @@ import { FEED_EVENTS } from "../../src/data";
 
 export default function FeedScreen() {
   return (
-    <View className="flex-1 bg-[#f2f6f3]">
+    <View className="flex-1 bg-solarpunk-page">
       {/* Ambient glow backgrounds */}
-      <View className="absolute top-0 left-0 w-[300px] h-[300px] rounded-full bg-emerald-300/20 -translate-x-1/2 -translate-y-1/2" />
-      <View className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-amber-200/20 translate-x-1/3 translate-y-1/3" />
+      <View className="absolute top-0 left-0 w-[300px] h-[300px] rounded-full bg-solarpunk-leather/10 -translate-x-1/2 -translate-y-1/2" />
+      <View className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-solarpunk-sky/15 translate-x-1/3 translate-y-1/3" />
 
       <ScrollView
         className="flex-1"
@@ -17,12 +17,12 @@ export default function FeedScreen() {
       >
         {/* Top Bar */}
         <View className="flex-row items-center justify-between py-4 mb-2">
-          <View className="flex-row items-center bg-emerald-100/50 rounded-full p-1">
-            <View className="px-5 py-2.5 bg-emerald-300 rounded-full">
-              <Text className="text-emerald-950 text-sm font-semibold">Around you</Text>
+          <View className="flex-row items-center bg-solarpunk-green/20 rounded-full p-1">
+            <View className="px-5 py-2.5 bg-solarpunk-green/80 rounded-full">
+              <Text className="text-solarpunk-leather text-sm font-semibold">Around you</Text>
             </View>
             <View className="px-5 py-2.5">
-              <Text className="text-emerald-800/60 text-sm font-medium">Friends</Text>
+              <Text className="text-solarpunk-leather/60 text-sm font-medium">Friends</Text>
             </View>
           </View>
           <View className="p-3 bg-white/70 rounded-2xl border border-white">
@@ -40,9 +40,9 @@ export default function FeedScreen() {
             style={{
               marginBottom: 24,
               borderRadius: 32,
-              backgroundColor: "rgba(255,255,255,0.4)",
+              backgroundColor: "rgba(250,235,215,0.6)",
               borderWidth: 1,
-              borderColor: "rgba(255,255,255,0.6)",
+              borderColor: "rgba(250,235,215,0.8)",
               shadowColor: "#000",
               shadowOffset: { width: 0, height: 8 },
               shadowOpacity: 0.04,
@@ -69,9 +69,9 @@ export default function FeedScreen() {
                   resizeMode="cover"
                 />
               </View>
-              <Text className="text-[15px] text-emerald-900/80 flex-1 flex-shrink">
-                <Text className="font-bold text-emerald-950">{event.userName}</Text> captured a{" "}
-                <Text className="font-bold text-emerald-600">{event.animal.name}</Text>
+              <Text className="text-[15px] text-solarpunk-leather/80 flex-1 flex-shrink">
+                <Text className="font-bold text-solarpunk-leather">{event.userName}</Text> captured a{" "}
+                <Text className="font-bold text-solarpunk-leather">{event.animal.name}</Text>
               </Text>
             </View>
 
@@ -122,19 +122,19 @@ export default function FeedScreen() {
                   <View className="p-2.5 rounded-full bg-amber-50 border border-amber-100/50">
                     <Heart size={20} color="#f59e0b" strokeWidth={2.5} />
                   </View>
-                  <Text className="text-sm font-semibold text-emerald-900/60">{event.likes}</Text>
+                  <Text className="text-sm font-semibold text-solarpunk-leather/60">{event.likes}</Text>
                 </View>
                 <View className="flex-row items-center gap-2">
-                  <View className="p-2.5 rounded-full bg-emerald-50 border border-emerald-100/50">
-                    <MessageCircle size={20} color="#10b981" strokeWidth={2.5} />
+                  <View className="p-2.5 rounded-full bg-solarpunk-page border border-solarpunk-green/30">
+                    <MessageCircle size={20} color="#A8DCAB" strokeWidth={2.5} />
                   </View>
-                  <Text className="text-sm font-semibold text-emerald-900/60">{event.comments}</Text>
+                  <Text className="text-sm font-semibold text-solarpunk-leather/60">{event.comments}</Text>
                 </View>
               </View>
 
               <View className="flex-row items-center gap-1.5 px-4 py-2.5 rounded-full bg-white/60 border border-white max-w-[50%]">
                 <MapPin size={16} color="#d97706" strokeWidth={2.5} />
-                <Text className="text-[13px] font-semibold text-emerald-900/70" numberOfLines={1}>
+                <Text className="text-[13px] font-semibold text-solarpunk-leather/70" numberOfLines={1}>
                   {event.location}
                 </Text>
               </View>

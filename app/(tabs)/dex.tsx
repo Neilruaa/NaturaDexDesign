@@ -20,7 +20,7 @@ function AnimalCard({ animal, index }: { animal: Animal; index: number }) {
                 width: CARD_WIDTH,
                 marginBottom: CARD_GAP,
                 borderRadius: 24,
-                backgroundColor: "rgba(255,255,255,0.6)",
+                backgroundColor: "rgba(250,235,215,0.8)",
                 borderWidth: 1,
                 borderColor: "rgba(255,255,255,1)",
                 shadowColor: "#000",
@@ -63,7 +63,7 @@ function AnimalCard({ animal, index }: { animal: Animal; index: number }) {
 
             {/* Info */}
             <View style={{ padding: 12, paddingTop: 4, gap: 8 }}>
-                <Text className="text-sm font-bold text-emerald-950" numberOfLines={1}>
+                <Text className="text-sm font-bold text-solarpunk-leather" numberOfLines={1}>
                     {animal.name}
                 </Text>
 
@@ -73,7 +73,7 @@ function AnimalCard({ animal, index }: { animal: Animal; index: number }) {
                         <Star
                             key={i}
                             size={12}
-                            color={i < animal.rarity ? "#fbbf24" : "rgba(6,78,59,0.1)"}
+                            color={i < animal.rarity ? "#fbbf24" : "rgba(151,87,43,0.1)"}
                             fill={i < animal.rarity ? "#fbbf24" : "transparent"}
                         />
                     ))}
@@ -82,14 +82,14 @@ function AnimalCard({ animal, index }: { animal: Animal; index: number }) {
                 {/* HP Bar */}
                 <View>
                     <View className="flex-row justify-between items-end mb-1">
-                        <Text className="text-[10px] font-bold text-emerald-800/50 uppercase tracking-wider">
+                        <Text className="text-[10px] font-bold text-solarpunk-leather/50 uppercase tracking-wider">
                             HP
                         </Text>
-                        <Text className="text-[10px] font-semibold text-emerald-900/70">
+                        <Text className="text-[10px] font-semibold text-solarpunk-leather/70">
                             {animal.hp}/{animal.maxHp}
                         </Text>
                     </View>
-                    <View className="h-1.5 w-full bg-emerald-100 rounded-full overflow-hidden">
+                    <View className="h-1.5 w-full bg-solarpunk-green/30 rounded-full overflow-hidden">
                         <MotiView
                             from={{ width: "0%" as any }}
                             animate={{ width: `${hpPercentage}%` as any }}
@@ -97,7 +97,7 @@ function AnimalCard({ animal, index }: { animal: Animal; index: number }) {
                             style={{
                                 height: "100%",
                                 borderRadius: 9999,
-                                backgroundColor: hpPercentage > 50 ? "#10b981" : "#f59e0b",
+                                backgroundColor: hpPercentage > 50 ? "#A8DCAB" : "#f59e0b",
                             }}
                         />
                     </View>
@@ -112,7 +112,7 @@ export default function DexScreen() {
     const tabs = ["Fauna", "Flora", "Taming"];
 
     return (
-        <View className="flex-1 bg-[#f2f6f3]">
+        <View className="flex-1 bg-solarpunk-page">
             {/* Tabs Header */}
             <View style={{ paddingTop: 60, paddingHorizontal: 16, paddingBottom: 8 }}>
                 <View className="flex-row items-center bg-white/50 rounded-full p-1">
@@ -123,7 +123,7 @@ export default function DexScreen() {
                             style={{ flex: 1 }}
                         >
                             <View
-                                className={`py-3 rounded-full items-center ${activeTab === tab ? "bg-emerald-300/80" : ""
+                                className={`py-3 rounded-full items-center ${activeTab === tab ? "bg-solarpunk-green/60" : ""
                                     }`}
                                 style={
                                     activeTab === tab
@@ -138,8 +138,8 @@ export default function DexScreen() {
                             >
                                 <Text
                                     className={`text-sm font-semibold ${activeTab === tab
-                                            ? "text-emerald-950"
-                                            : "text-emerald-800/60"
+                                            ? "text-solarpunk-leather"
+                                            : "text-solarpunk-leather/60"
                                         }`}
                                 >
                                     {tab}

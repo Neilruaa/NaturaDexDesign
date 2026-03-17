@@ -9,7 +9,7 @@ export default function ProfileScreen() {
     const router = useRouter();
 
     return (
-        <View className="flex-1 bg-[#f2f6f3]">
+        <View className="flex-1 bg-solarpunk-page">
             {/* Header */}
             <View
                 style={{
@@ -19,23 +19,23 @@ export default function ProfileScreen() {
                     justifyContent: "space-between",
                     paddingHorizontal: 24,
                     paddingVertical: 16,
-                    backgroundColor: "rgba(255,255,255,0.4)",
+                    backgroundColor: "rgba(250,235,215,0.6)",
                     borderBottomWidth: 1,
                     borderBottomColor: "rgba(255,255,255,0.5)",
                 }}
             >
-                <Text className="text-xl font-black text-emerald-950 tracking-tight">Profile</Text>
+                <Text className="text-xl font-black text-solarpunk-leather tracking-tight">Profile</Text>
                 <Pressable
                     onPress={() => router.replace("/login")}
                     style={{
                         padding: 10,
                         borderRadius: 9999,
-                        backgroundColor: "rgba(16,185,129,0.1)",
+                        backgroundColor: "rgba(168,220,171,0.1)",
                         borderWidth: 1,
                         borderColor: "rgba(255,255,255,0.8)",
                     }}
                 >
-                    <Settings size={20} color="#065f46" />
+                    <Settings size={20} color="#97572B" />
                 </Pressable>
             </View>
 
@@ -57,7 +57,7 @@ export default function ProfileScreen() {
                                 height: 96,
                                 borderRadius: 48,
                                 padding: 3,
-                                backgroundColor: "#34d399",
+                                backgroundColor: "#2E6F40",
                             }}
                         >
                             <View
@@ -84,7 +84,7 @@ export default function ProfileScreen() {
                                 position: "absolute",
                                 bottom: -8,
                                 right: -8,
-                                backgroundColor: "#10b981",
+                                backgroundColor: "#A8DCAB",
                                 width: 36,
                                 height: 36,
                                 borderRadius: 18,
@@ -101,23 +101,23 @@ export default function ProfileScreen() {
                     </View>
 
                     <View style={{ flex: 1 }}>
-                        <Text className="text-2xl font-bold text-emerald-950 mb-3">{USER_PROFILE.name}</Text>
+                        <Text className="text-2xl font-bold text-solarpunk-leather mb-3">{USER_PROFILE.name}</Text>
                         <View className="flex-row gap-6">
                             <View>
-                                <Text className="text-xl font-bold text-emerald-900">{USER_PROFILE.captured}</Text>
-                                <Text className="text-[11px] font-semibold text-emerald-700/60 mt-1 uppercase tracking-wide">
+                                <Text className="text-xl font-bold text-solarpunk-leather">{USER_PROFILE.captured}</Text>
+                                <Text className="text-[11px] font-semibold text-solarpunk-leather/60 mt-1 uppercase tracking-wide">
                                     Captured
                                 </Text>
                             </View>
                             <View>
-                                <Text className="text-xl font-bold text-emerald-900">{USER_PROFILE.followers}</Text>
-                                <Text className="text-[11px] font-semibold text-emerald-700/60 mt-1 uppercase tracking-wide">
+                                <Text className="text-xl font-bold text-solarpunk-leather">{USER_PROFILE.followers}</Text>
+                                <Text className="text-[11px] font-semibold text-solarpunk-leather/60 mt-1 uppercase tracking-wide">
                                     Followers
                                 </Text>
                             </View>
                             <View>
-                                <Text className="text-xl font-bold text-emerald-900">{USER_PROFILE.following}</Text>
-                                <Text className="text-[11px] font-semibold text-emerald-700/60 mt-1 uppercase tracking-wide">
+                                <Text className="text-xl font-bold text-solarpunk-leather">{USER_PROFILE.following}</Text>
+                                <Text className="text-[11px] font-semibold text-solarpunk-leather/60 mt-1 uppercase tracking-wide">
                                     Following
                                 </Text>
                             </View>
@@ -216,14 +216,14 @@ export default function ProfileScreen() {
                     {/* Bio */}
                     <View
                         style={{
-                            backgroundColor: "rgba(255,255,255,0.6)",
+                            backgroundColor: "rgba(250,235,215,0.8)",
                             borderRadius: 16,
                             padding: 16,
                             borderWidth: 1,
                             borderColor: "rgba(255,255,255,0.8)",
                         }}
                     >
-                        <Text className="text-sm font-medium text-emerald-900/80">
+                        <Text className="text-sm font-medium text-solarpunk-leather/80">
                             🌳 Nature enthusiast | 📸 Wildlife photographer
                         </Text>
                     </View>
@@ -236,16 +236,16 @@ export default function ProfileScreen() {
                     transition={{ delay: 200 }}
                 >
                     <View className="flex-row items-center justify-between mb-4">
-                        <Text className="text-lg font-bold text-emerald-950">My Best Captures</Text>
-                        <Text className="text-sm font-semibold text-emerald-800/50">3 posts</Text>
+                        <Text className="text-lg font-bold text-solarpunk-leather">My Best Captures</Text>
+                        <Text className="text-sm font-semibold text-solarpunk-leather/50">3 posts</Text>
                     </View>
 
                     <View
                         style={{
                             borderRadius: 32,
-                            backgroundColor: "rgba(255,255,255,0.4)",
+                            backgroundColor: "rgba(250,235,215,0.6)",
                             borderWidth: 1,
-                            borderColor: "rgba(255,255,255,0.6)",
+                            borderColor: "rgba(250,235,215,0.8)",
                             shadowColor: "#000",
                             shadowOffset: { width: 0, height: 8 },
                             shadowOpacity: 0.04,
@@ -270,9 +270,9 @@ export default function ProfileScreen() {
                                     resizeMode="cover"
                                 />
                             </View>
-                            <Text className="text-sm font-medium text-emerald-900/80">
+                            <Text className="text-sm font-medium text-solarpunk-leather/80">
                                 You captured a{" "}
-                                <Text className="font-bold text-emerald-600">{bestCapture.animal.name}</Text>
+                                <Text className="font-bold text-solarpunk-leather">{bestCapture.animal.name}</Text>
                             </Text>
                         </View>
 

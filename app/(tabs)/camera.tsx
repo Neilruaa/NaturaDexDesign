@@ -29,7 +29,7 @@ export default function CameraScreen() {
         <View className="flex-1 bg-zinc-950" style={{ width, height }}>
             {/* Dark Gradient Background */}
             <LinearGradient
-                colors={["rgba(6,78,59,0.4)", "#09090b", "rgba(19,78,74,0.3)"]}
+                colors={["rgba(151,87,43,0.4)", "#09090b", "rgba(19,78,74,0.3)"]}
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 1 }}
                 style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }}
@@ -136,8 +136,8 @@ export default function CameraScreen() {
                                 width: 8,
                                 height: 8,
                                 borderRadius: 4,
-                                backgroundColor: "#34d399",
-                                shadowColor: "#34d399",
+                                backgroundColor: "#2E6F40",
+                                shadowColor: "#2E6F40",
                                 shadowOffset: { width: 0, height: 0 },
                                 shadowOpacity: 0.8,
                                 shadowRadius: 12,
@@ -156,7 +156,7 @@ export default function CameraScreen() {
                             marginTop: -32,
                             marginLeft: -32,
                             borderWidth: 1,
-                            borderColor: "rgba(16,185,129,0.3)",
+                            borderColor: "rgba(168,220,171,0.3)",
                             borderRadius: 32,
                             alignItems: "center",
                             justifyContent: "center",
@@ -167,8 +167,8 @@ export default function CameraScreen() {
                                 width: 8,
                                 height: 8,
                                 borderRadius: 4,
-                                backgroundColor: "#34d399",
-                                shadowColor: "#34d399",
+                                backgroundColor: "#2E6F40",
+                                shadowColor: "#2E6F40",
                                 shadowOffset: { width: 0, height: 0 },
                                 shadowOpacity: 1,
                                 shadowRadius: 20,
@@ -190,7 +190,7 @@ export default function CameraScreen() {
                     height: 96,
                     borderRadius: 48,
                     borderWidth: 4,
-                    borderColor: "rgba(16,185,129,0.3)",
+                    borderColor: "rgba(168,220,171,0.3)",
                     alignItems: "center",
                     justifyContent: "center",
                     zIndex: 40,
@@ -206,7 +206,7 @@ export default function CameraScreen() {
                         justifyContent: "center",
                         borderWidth: 1,
                         borderColor: "rgba(255,255,255,0.5)",
-                        shadowColor: "#34d399",
+                        shadowColor: "#2E6F40",
                         shadowOffset: { width: 0, height: 0 },
                         shadowOpacity: 0.2,
                         shadowRadius: 30,
@@ -230,7 +230,7 @@ export default function CameraScreen() {
                             right: 0,
                             bottom: 0,
                             zIndex: 50,
-                            backgroundColor: "rgba(6,78,59,0.9)",
+                            backgroundColor: "rgba(151,87,43,0.9)",
                             alignItems: "center",
                             justifyContent: "center",
                         }}
@@ -242,7 +242,7 @@ export default function CameraScreen() {
                             style={{ alignItems: "center" }}
                         >
                             <LinearGradient
-                                colors={["#34d399", "#14b8a6"]}
+                                colors={["#2E6F40", "#14b8a6"]}
                                 style={{
                                     width: 128,
                                     height: 128,
@@ -250,7 +250,7 @@ export default function CameraScreen() {
                                     alignItems: "center",
                                     justifyContent: "center",
                                     marginBottom: 24,
-                                    shadowColor: "#34d399",
+                                    shadowColor: "#2E6F40",
                                     shadowOffset: { width: 0, height: 0 },
                                     shadowOpacity: 0.5,
                                     shadowRadius: 50,

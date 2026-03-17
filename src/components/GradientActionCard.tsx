@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     width: 96,
     height: 96,
     borderRadius: 48,
-    backgroundColor: "rgba(255,255,255,0.6)",
+    backgroundColor: "rgba(250,235,215,0.8)",
     borderWidth: 1,
     borderColor: "rgba(255,255,255,0.8)",
     alignItems: "center",
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 15,
     fontWeight: "600",
-    color: "rgba(6,78,59,0.7)",
+    color: "rgba(151,87,43,0.7)",
     marginTop: 8,
     textAlign: "center",
     paddingHorizontal: 32,
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
   caption: {
     fontSize: 14,
     fontWeight: "500",
-    color: "rgba(6,78,59,0.5)",
+    color: "rgba(151,87,43,0.5)",
     marginTop: 4,
     textTransform: "uppercase",
     letterSpacing: 3,

@@ -8,7 +8,7 @@ export interface UserAvatarProps {
   size?: number;
   /** User level — shown as a badge if provided */
   level?: number;
-  /** Ring color (default: #34d399) */
+  /** Ring color (default: #2E6F40) */
   ringColor?: string;
 }
 
@@ -20,7 +20,7 @@ export function UserAvatar({
   uri,
   size = 96,
   level,
-  ringColor = "#34d399",
+  ringColor = "#2E6F40",
 }: UserAvatarProps) {
   const half = size / 2;
   const badgeSize = size * 0.375; // ~36px at default 96
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: -8,
     right: -8,
-    backgroundColor: "#10b981",
+    backgroundColor: "#A8DCAB",
     alignItems: "center",
     justifyContent: "center",
     borderWidth: 4,

@@ -68,14 +68,14 @@ export function FormInput({
             style={styles.trailingIcon}
           >
             {isPasswordVisible ? (
-              <EyeOff size={18} color="rgba(5,150,105,0.4)" />
+              <EyeOff size={18} color="rgba(168,220,171,0.4)" />
             ) : (
-              <Eye size={18} color="rgba(5,150,105,0.4)" />
+              <Eye size={18} color="rgba(168,220,171,0.4)" />
             )}
           </Pressable>
         ) : Icon ? (
           <View style={styles.trailingIcon}>
-            <Icon size={18} color="rgba(5,150,105,0.4)" />
+            <Icon size={18} color="rgba(168,220,171,0.4)" />
           </View>
         ) : null}
       </View>
@@ -90,14 +90,14 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#064e3b",
+    color: "#97572B",
     marginBottom: 8,
   },
   inputWrapper: {
     position: "relative",
   },
   input: {
-    backgroundColor: "rgba(255,255,255,0.6)",
+    backgroundColor: "rgba(250,235,215,0.8)",
     borderWidth: 1,
     borderColor: "rgba(255,255,255,0.8)",
     borderRadius: 16,
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     paddingRight: 48,
     fontSize: 14,
-    color: "#064e3b",
+    color: "#97572B",
   },
   trailingIcon: {
     position: "absolute",

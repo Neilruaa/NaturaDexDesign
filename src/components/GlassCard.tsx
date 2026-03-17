@@ -36,9 +36,9 @@ export function GlassCard({
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: "rgba(255,255,255,0.4)",
+    backgroundColor: "rgba(250,235,215,0.6)",
     borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.6)",
+    borderColor: "rgba(250,235,215,0.8)",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.04,

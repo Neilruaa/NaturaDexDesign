@@ -1,5 +1,7 @@
 export type Rarity = 1 | 2 | 3 | 4 | 5;
 
+export type AnimalCategory = 'flying' | 'marine' | 'insect' | 'terrestrial' | 'flora';
+
 export interface Animal {
     id: string;
     name: string;
@@ -7,7 +9,7 @@ export interface Animal {
     rarity: Rarity;
     hp: number;
     maxHp: number;
-    type: 'fauna' | 'flora';
+    type: AnimalCategory;
 }
 
 export const ANIMALS: Animal[] = [
@@ -18,7 +20,7 @@ export const ANIMALS: Animal[] = [
         rarity: 4,
         hp: 190,
         maxHp: 200,
-        type: 'fauna',
+        type: 'terrestrial',
     },
     {
         id: 'a2',
@@ -27,7 +29,7 @@ export const ANIMALS: Animal[] = [
         rarity: 5,
         hp: 220,
         maxHp: 250,
-        type: 'fauna',
+        type: 'flying',
     },
     {
         id: 'a3',
@@ -36,7 +38,7 @@ export const ANIMALS: Animal[] = [
         rarity: 3,
         hp: 180,
         maxHp: 200,
-        type: 'fauna',
+        type: 'terrestrial',
     },
     {
         id: 'a4',
@@ -45,7 +47,7 @@ export const ANIMALS: Animal[] = [
         rarity: 2,
         hp: 90,
         maxHp: 100,
-        type: 'fauna',
+        type: 'terrestrial',
     },
     {
         id: 'a5',
@@ -54,7 +56,7 @@ export const ANIMALS: Animal[] = [
         rarity: 2,
         hp: 75,
         maxHp: 80,
-        type: 'fauna',
+        type: 'terrestrial',
     },
     {
         id: 'a6',
@@ -63,7 +65,7 @@ export const ANIMALS: Animal[] = [
         rarity: 5,
         hp: 310,
         maxHp: 320,
-        type: 'fauna',
+        type: 'flying',
     },
     {
         id: 'a7',
@@ -72,7 +74,7 @@ export const ANIMALS: Animal[] = [
         rarity: 3,
         hp: 150,
         maxHp: 180,
-        type: 'fauna',
+        type: 'terrestrial',
     },
     {
         id: 'a8',
@@ -81,7 +83,7 @@ export const ANIMALS: Animal[] = [
         rarity: 5,
         hp: 450,
         maxHp: 500,
-        type: 'fauna',
+        type: 'terrestrial',
     },
 ];
 

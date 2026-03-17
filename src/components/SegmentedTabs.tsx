@@ -84,9 +84,9 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   activeLabel: {
-    color: "#064e3b",
+    color: "#97572B",
   },
   inactiveLabel: {
-    color: "rgba(6,78,59,0.6)",
+    color: "rgba(151,87,43,0.6)",
   },
 });

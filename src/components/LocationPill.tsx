@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 10,
     borderRadius: 9999,
-    backgroundColor: "rgba(255,255,255,0.6)",
+    backgroundColor: "rgba(250,235,215,0.8)",
     borderWidth: 1,
     borderColor: "white",
     maxWidth: "50%",
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 13,
     fontWeight: "600",
-    color: "rgba(6,78,59,0.7)",
+    color: "rgba(151,87,43,0.7)",
     flexShrink: 1,
   },
 });
