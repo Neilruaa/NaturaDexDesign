@@ -1,10 +1,12 @@
 import { ScrollView, View, Text, Image, Pressable } from "react-native";
 import { MotiView } from "moti";
 import { Settings, Award, Camera as CameraIcon } from "lucide-react-native";
+import { useRouter } from "expo-router";
 import { USER_PROFILE, FEED_EVENTS } from "../../src/data";
 
 export default function ProfileScreen() {
     const bestCapture = FEED_EVENTS[0];
+    const router = useRouter();
 
     return (
         <View className="flex-1 bg-[#f2f6f3]">
@@ -24,6 +26,7 @@ export default function ProfileScreen() {
             >
                 <Text className="text-xl font-black text-emerald-950 tracking-tight">Profile</Text>
                 <Pressable
+                    onPress={() => router.replace("/login")}
                     style={{
                         padding: 10,
                         borderRadius: 9999,

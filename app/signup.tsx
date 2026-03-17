@@ -5,10 +5,13 @@ import { Mail, Lock } from "lucide-react-native";
 import { useRouter } from "expo-router";
 import { GlassCard, FormInput, GradientButton } from "../src/components";
 
-export default function LoginScreen() {
+export default function SignupScreen() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+    
     const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const router = useRouter();
 
     return (
@@ -33,9 +36,9 @@ export default function LoginScreen() {
                 >
                     {/* Logo/Brand */}
                     <View className="items-center mb-8">
-                        <Text className="text-3xl font-bold text-emerald-900 mb-2">Bon retour !</Text>
+                        <Text className="text-3xl font-bold text-emerald-900 mb-2">Bienvenue</Text>
                         <Text className="text-emerald-700/70 text-base text-center px-4">
-                            Connectez-vous à votre compte
+                            Créez votre compte pour commencer
                         </Text>
                     </View>
 
@@ -52,30 +55,29 @@ export default function LoginScreen() {
                         />
 
                         {/* Password Field */}
-                        <View className="mb-2">
-                            <FormInput
-                                label="Mot de passe"
-                                value={password}
-                                onChangeText={setPassword}
-                                placeholder="••••••••"
-                                secureTextEntry
-                                visibilityToggle={[showPassword, setShowPassword]}
-                                style={{ marginBottom: 0 }}
-                            />
-                        </View>
+                        <FormInput
+                            label="Mot de passe"
+                            value={password}
+                            onChangeText={setPassword}
+                            placeholder="••••••••"
+                            secureTextEntry
+                            visibilityToggle={[showPassword, setShowPassword]}
+                        />
 
-                        {/* Forgot Password Link */}
-                        <View className="mb-6 items-end">
-                            <Pressable>
-                                <Text className="text-sm font-semibold text-emerald-700">
-                                    Mot de passe oublié ?
-                                </Text>
-                            </Pressable>
-                        </View>
+                        {/* Confirm Password Field */}
+                        <FormInput
+                            label="Confirmer le mot de passe"
+                            value={confirmPassword}
+                            onChangeText={setConfirmPassword}
+                            placeholder="••••••••"
+                            secureTextEntry
+                            visibilityToggle={[showConfirmPassword, setShowConfirmPassword]}
+                            style={{ marginBottom: 24 }}
+                        />
 
-                        {/* Sign In Button */}
+                        {/* Create Account Button */}
                         <GradientButton
-                            label="Se connecter"
+                            label="Créer un compte"
                             onPress={() => router.replace("/(tabs)")}
                             style={{ marginBottom: 24 }}
                         />
@@ -134,16 +136,16 @@ export default function LoginScreen() {
                         </View>
                     </GlassCard>
 
-                    {/* Sign Up Link */}
+                    {/* Sign In Link */}
                     <View className="mt-6 items-center">
                         <Text className="text-sm text-emerald-700">
-                            Vous n'avez pas de compte ?{" "}
+                            Vous avez déjà un compte ?{" "}
                             <Text
                                 className="font-semibold text-emerald-600"
                                 style={{ textDecorationLine: "underline" }}
-                                onPress={() => router.replace("/signup")}
+                                onPress={() => router.replace("/login")}
                             >
-                                Créer un compte
+                                Se connecter
                             </Text>
                         </Text>
                     </View>

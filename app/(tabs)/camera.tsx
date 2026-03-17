@@ -35,19 +35,6 @@ export default function CameraScreen() {
                 style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }}
             />
 
-            {/* Ambient Glow */}
-            <View
-                style={{
-                    position: "absolute",
-                    top: height * 0.25,
-                    left: width * 0.25,
-                    width: 384,
-                    height: 384,
-                    borderRadius: 192,
-                    backgroundColor: "rgba(16,185,129,0.1)",
-                }}
-            />
-
             {/* Top Actions */}
             <View
                 style={{
@@ -58,34 +45,6 @@ export default function CameraScreen() {
                     gap: 12,
                 }}
             >
-                <Pressable
-                    style={{
-                        width: 48,
-                        height: 48,
-                        borderRadius: 16,
-                        backgroundColor: "rgba(255,255,255,0.1)",
-                        borderWidth: 1,
-                        borderColor: "rgba(255,255,255,0.2)",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <Pause size={22} color="rgba(255,255,255,0.7)" fill="rgba(255,255,255,0.7)" />
-                </Pressable>
-                <Pressable
-                    style={{
-                        width: 48,
-                        height: 48,
-                        borderRadius: 16,
-                        backgroundColor: "rgba(255,255,255,0.1)",
-                        borderWidth: 1,
-                        borderColor: "rgba(255,255,255,0.2)",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <MapIcon size={22} color="rgba(255,255,255,0.7)" />
-                </Pressable>
             </View>
 
             {/* Reticle / Scanner UI */}
